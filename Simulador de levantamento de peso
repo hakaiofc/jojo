@@ -1,0 +1,25 @@
+_G.Jojo_BR = true 
+while _G.Jojo_BR do wait(0.485)if _G.Jojo_BR == false then return end
+local args = {
+    [1] = {
+        [1] = "UseTool",
+        [2] = 1
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "Rebirth"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+local args = {
+    [1] = {
+        [1] = "ActivateMachine"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):FireServer(unpack(args))
+end
